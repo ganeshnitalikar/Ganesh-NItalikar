@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+    <title>Ganesh Nitalikar</title>
+</head>
+<body>
+    <nav class="sticky"> 
+        <div class="nav-content">
+            <a href="#intro" class="logo">GN</a>
+            <div class="nav-items">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro">
+        <div class="intro-background">
+            <div class="intro-content">
+                <h1>Hello, I'm <span id="typed-text"></span></h1>
+                <p>I'm a passionate developer ready to make an impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-title ">
+            <h2>About Me</h2>
+        </div>
+        <div class="section-content ">
+            <div class="about-content">
+                <img src="Assets/gn.jpeg" alt="ganeshnitalikar">
+            </div>
+            <div class="about-text">
+                <h3>Hello! I'm Ganesh Nitalikar</h3>
+                <p>
+                    I'm a final year Computer Engineering student with a profound passion for programming and web development. My journey into the world of technology started with HTML, CSS and since then, I've been on an exciting path of continuous learning and growth.
+                </p>
+                <p>
+                    Throughout my academic journey, I've demonstrated a strong commitment to excellence, achieving an impressive 93.20% in my 10th-grade examinations and 87.54% in my 12th-grade examinations. These achievements have fueled my determination to make a positive impact in the tech industry.
+                </p>
+                <p>
+                    With a keen focus on my studies, I have maintained an outstanding engineering aggregate of 8.90, which showcases my dedication and consistent performance.
+                </p>
+                <p>
+                    My vision is to contribute significantly to the ever-evolving digital landscape by creating innovative and user-centric solutions. I firmly believe that technology can transform lives and businesses, and my goal is to develop applications and platforms that simplify complexities and foster creativity.
+                </p>
+                <p>
+                    Web development is my true passion, and I thrive on building interactive and visually appealing websites that provide seamless user experiences. My curiosity constantly pushes me to explore new technologies, and currently, I'm immersed in learning Express.js to enhance my backend development skills and create robust web applications.
+                </p>
+                <p>
+                    When it comes to work, I believe in the power of collaboration, adaptability, and attention to detail. I aim to foster a supportive and creative environment that allows ideas to flourish, leading to innovative solutions. Continuously seeking feedback and learning from experiences is an integral part of my approach to personal and professional growth.
+                </p>
+                <p>
+                    Currently, I am dedicating myself to learning Express.js, a powerful framework for Node.js, to complement my frontend skills with backend development expertise. This will enable me to build full-stack applications and provide end-to-end solutions to real-world challenges.
+                </p>
+                <p>
+                    In my journey as a computer engineering student and aspiring web developer, I am driven by the desire to create technology that makes a tangible difference. I am excited to bring my skills, knowledge, and vision to the table, and I am always open to new opportunities and collaborations.
+                </p>
+                <p>
+                    If you'd like to discuss potential projects, explore new ideas, or simply connect, feel free to reach out to me. Thank you for visiting my portfolio site, and I look forward to connecting with you!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="section-content">
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="Assets/java.svg" alt="">
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                    <img src="Assets/html.svg" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="Assets/css.svg" alt="">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="Assets/js.svg" alt="">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="section-content">
+                <div class="projects-container">
+                    <div class="project-card">
+                        <a href="https://ganeshnitalikar.github.io/LGM-TASK-4/" target="_blank">
+                            <img src="Assets/cal.png" alt="calculator-img">
+                            <p>Calculator</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://ganeshnitalikar.github.io/Color-Generator/" target="_blank">
+                            <img src="Assets/col.png" alt="color-generator-img">
+                            <p>Color Generator</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://ganeshnitalikar.github.io/LGM-TASK-1/" target="_blank">
+                            <img src="Assets/todolist.png" alt="to-do-list-img">
+                            <p>To-Do-List</p>
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="section-content">
+            <div class="contact-form-container">
+                <form id="contact-form" action="https://formspree.io/f/mvojzlok" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyrights Reserved
+                <a href="https://github.com/ganeshnitalikar" target="_blank">@ganeshnitalikar</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
