@@ -1,16 +1,16 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-
 }
 
+/* Navigation */
 nav {
     font-family: 'Roboto', sans-serif;
     background-color: #333;
     color: #fff;
     padding: 10px 30px;
 }
-
 
 .logo {
     font-size: 24px;
@@ -38,7 +38,6 @@ nav li:first-child {
     align-items: center;
 }
 
-
 nav a {
     color: #fff;
     text-decoration: none;
@@ -55,6 +54,7 @@ nav.sticky {
     z-index: 100;
 }
 
+/* Intro Section */
 #intro {
     height: 100vh;
     display: flex;
@@ -90,11 +90,11 @@ nav.sticky {
     font-size: 24px;
 }
 
+/* About Section */
 #about {
     background-color: #f5f5f5;
     padding: 50px 0;
     text-align: center;
-
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
 }
@@ -165,6 +165,7 @@ nav.sticky {
     }
 }
 
+/* Skills Section */
 #skills {
     padding: 50px;
     text-align: center;
@@ -191,6 +192,7 @@ nav.sticky {
     font-size: 16px;
 }
 
+/* Projects Section */
 #projects {
     padding: 50px;
     text-align: center;
@@ -210,6 +212,9 @@ nav.sticky {
     border-radius: 8px;
     padding: 20px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .project-card img {
@@ -230,7 +235,34 @@ nav.sticky {
     transform: translateY(-2px);
 }
 
+.project-details {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
 
+.project-details p {
+    margin: 0 0 10px;
+}
+
+.project-details a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+.project-card.expanded .project-details {
+    display: block;
+}
+
+/* Contact Section */
 #contact {
     padding: 50px;
     text-align: center;
@@ -281,25 +313,22 @@ button:hover {
     background-color: #555;
 }
 
-
-section {
-    position: relative;
-}
-
-.section-title {
+/* Footer */
+footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
-.section-content {
-    background-color: #f5f5f5;
-    padding: 30px;
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.section-title h2 {
-    margin: 0;
+footer a:hover {
+    text-decoration: underline;
 }
 
 #about .section-title {
@@ -316,21 +345,4 @@ section {
 
 #contact .section-title {
     background-color: #DC3545;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
